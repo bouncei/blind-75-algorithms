@@ -1,5 +1,5 @@
 class Solution(object):
-    def twoSum_1(self, nums, target): #TIME COMPLEXITY O(n) ([BEST CASE])
+    def twoSum_1(self, nums, target): #TIME COMPLEXITY O(n) (BEST CASE)
         """
         :type nums: List[int]
         :type target: int
@@ -15,15 +15,12 @@ class Solution(object):
     
 
 
-    def twoSum_2(self, nums, target): #TIME COMPLEXITY: O(n^2)
+    def twoSum_2(self, nums, target): #TIME COMPLEXITY: O(n^2) (BRUTE CASE)
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        reference_index = 0
-        a = nums[reference_index]
-
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
                 if (i != j and nums[i] + nums[j] == target):
